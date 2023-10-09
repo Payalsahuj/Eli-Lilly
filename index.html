@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Student Database</title>
+  </head>
+  <body>
+    <div>
+      <h1>Masai Student Database</h1>
+      <div style="border: 2px solid black; display: flex; flex-direction: row; width: 100%; ">
+        <div id="functiondata" style="border: 1px solid black; width: 20%; display: flex; flex-direction: column; padding: 2%;">
+          <h1>All functionality</h1>
+          <h3>Add student</h3>
+          <input type="text" placeholder="Student Name" id="name">
+          <br/>
+          <input type="text" placeholder="Student Batch" id="batch">
+          <br/>
+          <input type="text" placeholder="Student Section" id="section">
+          <br/>
+          <input type="number" placeholder="Student Score" id="eval_score">
+          <br/>
+          <input type="text" placeholder="Image URL" id="image">
+          <br/>
+          <button id="add_student">Add Student</button>
+          <br/>
+          <h3>Update Score</h3>
+          <input type="number" placeholder="Update Score" id="new_score">
+          <br/>
+          <h3>Short Based On Score</h3>
+          <br/>
+          <button id="sort-low-to-high">Short Low To High</button>
+          <br/>
+          <button id="sort-high-to-low">Short High To Low</button>
+          <br/>
+          <h3>Filter By Score</h3>
+          <br/>
+          <button id="greater-than">Score>=5</button>
+          <br/>
+          <button id="less-than">Score<=5</button>
+          
+        </div>
+        <div id="displaydata" style="border: 1px solid black; width: 80%; padding: 2%;">
+          <h1>All Data</h1>
+          <div id="container" style="text-align: center;" >
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <script src="./src/scripts/index.js"></script>
+  </body>
+</html>
